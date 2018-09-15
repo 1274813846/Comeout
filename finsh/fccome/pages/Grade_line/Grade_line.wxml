@@ -1,0 +1,42 @@
+<view wx:for="{{ Retest_fractional_line}}">
+<view class="garde">
+<view>年份</view>
+<view>{{item.years}}</view>
+</view>
+<view class="garde">
+<view>学校名称</view>
+<view>{{item.source}}</view>
+</view>
+<view class="garde">
+<view>院系</view>
+<view>{{item.Department}}</view>
+</view>
+<view class="garde">
+<view>专业代码</view>
+<view>{{item.Professional_code}}</view>
+</view>
+<view class="garde">
+<view>专业名称</view>
+<view>{{item.Professional_name}}</view>
+</view>
+<view class="garde">
+<view>总分</view>
+<view>{{item.total_score}}</view>
+</view>
+<view class="garde">
+<view>政治</view>
+<view>{{item.Politics}}</view>
+</view>
+<view class="garde">
+<view>英语</view>
+<view>{{item.English}}</view>
+</view>
+<view class="garde">
+<view>专业课一</view>
+<view>{{item.Subject_three}}</view>
+</view>
+<view class="garde">
+<view>专业课二</view>
+<view>{{item.Subject_four}}</view>
+</view>
+</view>

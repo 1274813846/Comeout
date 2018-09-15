@@ -1,0 +1,26 @@
+<!--pages/dispens/dispens.wxml-->
+<view class="base_base">
+<view class="basecont">
+	<text>调剂信息</text>
+</view>
+<view class='volunteer1' style='margin-top:20px'>
+  <text>调剂院校：</text>
+<view class="base_back">
+      <input style='width:172px;heigth:22px;background-color:#FFFFFF;padding-left:3px' ></input>
+    </view>
+    </view>
+    <view class='volunteer1' style='margin-top:20px'>
+    <text>调剂专业：</text>
+<view class="base_back">
+      <input style='width:172px;heigth:22px;background-color:#FFFFFF;padding-left:3px' ></input>
+    </view>
+    </view>
+     <view class='volunteer2' style='margin-top:20px'>
+    <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{choose1}}" wx:key='' id="{{index}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+</radio-group>
+</view>
+<button class='button3' style='margin-top:20px' >提交</button>
+</view>

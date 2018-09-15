@@ -1,0 +1,10 @@
+<!--pages/choose/choose.wxml-->
+<view class="base_base">
+<view class="basecont">
+	<text>个人选择</text>
+</view>
+<view class="base_text">
+  <button class="button2" bindtap='pee'>考研</button>
+  <button class="button2" bindtap='job'>就业</button>
+</view>
+</view>

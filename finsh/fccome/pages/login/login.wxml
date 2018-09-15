@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class="base_base">
+<view class="basecont">
+	<text>登录</text>
+</view>
+<view >
+	<view class="base_input">
+		<text>学号：</text>
+    <view class="base_back">
+      <input style='width:172px;heigth:22px;background-color:#FFFFFF;padding-left:3px' placeholder='{{userid}}' bindchange="inputChangeU"></input>
+    </view>
+	</view>
+</view>
+<view >
+	<view class="base_input">
+		<text>密码：</text>
+    <view class="base_back">
+      <input style='width:172px;heigth:22px;background-color:#FFFFFF;padding-left:3px' placeholder='{{psd}}' bindchange="inputChangeP"></input>
+    </view>
+	</view>
+</view>
+
+
+<view class="base_input"></view>
+<button class='button3' bindtap='onlogin'>登录</button>
+</view>

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/face/face",
+    "pages/mine/mine",
+    "pages/home/home",
+    "pages/story/story",
+    "pages/Job/Job",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/new/new",
+    "pages/new/success/success",
+    "pages/Pee/Pee",
+    "pages/template/template",
+    "pages/news/news",
+    "pages/Grade_line/Grade_line",
+    "pages/base/base",
+    "pages/choose/choose",
+    "pages/Congratulations/Congratulations",
+    "pages/dispens/dispens",
+    "pages/final/final",
+    "pages/base_pee/pee",
+    "pages/base_job/job",
+    "pages/repair/repair",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ComeOut",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/message1.png",
+        "selectedIconPath": "images/message2.png"
+      }
+    ]
+  }
+}

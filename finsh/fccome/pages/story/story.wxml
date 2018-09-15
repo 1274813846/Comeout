@@ -1,0 +1,15 @@
+<!--是否添加阅读背景-->
+
+<scroll-view scroll-y="true">
+<view>
+</view>
+    <view class="article">
+      <view class="title">{{story.title}}</view>
+      <view class="sourcetime">
+        <text>{{today}}</text><text class="source">{{story.author}}</text>
+      </view>
+      <view class="wxParse content"> 
+        <text class='str1' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{story.content}}</text>
+      </view>
+    </view>
+</scroll-view>

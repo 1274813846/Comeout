@@ -1,0 +1,28 @@
+<!--pages/job/job.wxml-->
+<view class="base_base">
+<view class="basecont">
+	<text>就业</text>
+</view>
+<radio-group class="radio-group1" bindchange="radioChange">
+  <label class="radio" wx:for="{{choose2}}" wx:key='' id="{{index}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+</radio-group>
+<view wx:if="{{job_state=='暂不就业原因'}}" class="volunteer2" style='margin-top:10px'>
+  <view class="base_back">
+  <textarea style='width:98%;heigth:22px;background-color:#FFFFFF;padding-top:2px;padding-left:2px;' placeholder="请填写单位名称或者原因" bindblur='inputChange'></textarea>
+  </view>
+</view>
+<view wx:if="{{job_state=='就业意向单位'}}" class="radio-group1" style='margin-top:10px'>
+  <view class="base_back1">
+      <input style='width:98%;heigth:22px;background-color:#FFFFFF;padding-left:3px' placeholder='请填写已获取offer公司名' bindchange='inputChange'></input>
+    </view>
+</view>
+<view wx:if="{{job_state=='已签三方单位'}}" class="radio-group1" style='margin-top:10px'>
+  <view class="base_back1">
+      <input style='width:98%;heigth:22px;background-color:#FFFFFF;padding-left:3px' placeholder='请填写已签三方公司名' bindchange='inputChange'></input>
+    </view>
+</view>
+<view class="base_input"></view>
+<button class='button3' bindtap='submit'>提交</button>
+</view>

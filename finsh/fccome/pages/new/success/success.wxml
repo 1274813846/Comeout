@@ -1,0 +1,30 @@
+<!-- 创建成功 -->
+<view class="success">
+    
+    <view class="tit">
+        <text>创建成功!</text>
+    </view>
+
+    <view class="panel">
+        <view class="task-name">
+            <text>已打卡</text>
+        </view>
+        <view class="intro">
+        <!--<image class="pic" src="{{avatarUrl}}"></image>-->  
+            <image class="userinfo-avatar" src="{{avatarUrl}}" background-size="cover"></image>
+        </view>
+        <view class="tips">
+            <text>打卡人：{{nickName}}</text>
+        </view>
+        <view class="dot-line">
+            <image src="../../../images/dot-line.png"></image>
+        </view>
+        <view class="code">
+            <input type="text" value="{{command}}"/>
+        </view>
+    </view>
+
+    <view class="close" bindtap="bindClose">
+        <image src="../../../images/success-close.png"></image>
+    </view>
+</view>

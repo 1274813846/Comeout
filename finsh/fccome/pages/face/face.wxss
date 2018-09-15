@@ -1,0 +1,31 @@
+.user-motto{
+    color: gray;
+    text-indent:28px;
+}
+
+.center{
+    flex-direction: column;
+    justify-content:center;
+}
+
+.margin{
+    margin: 25px;
+}
+
+.text{
+    color:red;
+}
+
+.label{
+    background-color: #F7F7F7;
+    opacity:0.4;
+}
+
+.back_img{
+    position:absolute;
+    left:0px;
+    top:0px;
+    height: 100vh; 
+    width: 100%;
+    z-index: -1;
+}

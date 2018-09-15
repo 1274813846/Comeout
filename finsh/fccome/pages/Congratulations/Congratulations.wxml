@@ -1,0 +1,2 @@
+<!--pages/Congratulations/Congratulations.wxml-->
+<image src='/images/Congratulations.png' mode='aspectFit'></image>

@@ -1,0 +1,32 @@
+<view class="content" scroll-y="true">
+  <view class="search-bar">
+    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+    <input placeholder="请输入公司名称" bindchange="inputChange"/>
+    <button type="primary" bindtap="query">查詢</button>
+  </view>
+  <view class="header-bg"></view>
+  <view class="job-content">
+    <view wx:for="{{jobList}}" wx:key="company"  id="{{index}}" bindtap="goToDetailPage">
+      <view class="job-list">
+        <view class="job-image">
+          <image src="{{item.imageUrl}}" mode="aspectFit"></image>
+        </view>
+        <view class="job-info">
+          <view class="job-info-style">
+            <view>公司:{{item.company}}</view>
+            <view>职位:{{item.position}}\n</view>
+            <view>薪资:{{item.salary}}\n</view>
+            <view>联系电话:{{item.tel}}\n</view>
+            <!-- <view>详情:{{item.detail}}\n</view> -->
+          </view>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </view>
+</view>
+
+
+<toast hidden="{{toastHidden}}" duration="3000" bindchange="onToastChanged">    
+        {{toastText}}    
+</toast>  

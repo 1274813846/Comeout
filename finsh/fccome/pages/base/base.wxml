@@ -1,0 +1,29 @@
+<!--pages/base/base.wxml-->
+<!--pages/base/base.wxml-->
+<view class="base_base">
+<view class="basecont">
+	<text>基本信息</text>
+</view>
+<view>
+	<view class="base_input">
+		<text>学号：</text>
+    <text>{{idnames.sid}}</text>
+	</view>
+  <view class="base_input">
+		<text>姓名：</text>
+    <text>{{idnames.name}}</text>
+	</view>
+  <view class="base_input">
+		<text>专业：</text>
+    <text>{{idnames.major}}</text>
+	</view><view class="base_input">
+		<text>班级：</text>
+    <text>{{idnames.class}}</text>
+	</view><view class="base_input">
+		<text>导师：</text>
+    <text>{{idnames.teacher}}</text>
+	</view>
+</view>
+<view class="base_input"></view>
+<button class='button3' bindtap='repair'>修改</button>
+</view>

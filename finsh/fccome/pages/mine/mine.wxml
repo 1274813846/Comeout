@@ -1,0 +1,35 @@
+<!-- <image src="{{imagesrc}}" class="back_img" style='opacity: 0.5;'  >  
+</image> -->
+
+<!--index.wxml-->
+<view style='opacity: 0.75'>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+ <view class="row-wrap">
+    <picker bindchange="bindCasPickerChange" value="{{casIndex1}}" range="{{casArray}}">
+        <view style='display: flex;flex-direction: row;'>
+             <view class="label">学院：</view>
+            <text>{{major}}</text>
+        </view>
+     </picker>
+</view>
+<button bindtap='base'>基本信息</button>
+<button bindtap='choose'>个人选择</button>
+<button wx:if="{{mychoose=='pee'}}" bindtap='result'>考研结果</button>
+<button bindtap='final'>最终去向</button>
+<button bindtap='exit'>退出登录</button>
+</view>
+  <view class="img-box">  
+      <canvas bindtap="hidden" hidden="{{canvasHidden}}"   
+        class='code' canvas-id="qrcCanvas"/>  
+  </view>  
+<toast hidden="{{toastHidden}}" duration="3000" bindchange="onToastChanged">    
+        {{toastText}}    
+</toast>  

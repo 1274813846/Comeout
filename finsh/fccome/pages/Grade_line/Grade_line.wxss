@@ -1,0 +1,10 @@
+/* pages/Grade_line/Grade_line.wxss */
+.garde
+{
+  display: flex;
+  font-size:16px;
+  font-style:italic;
+  flex-direction: row;
+  justify-content:space-between; 
+
+}

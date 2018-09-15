@@ -1,0 +1,43 @@
+<view class='container5'>
+    <view class='section'>
+
+        <scroll-view scroll-y="{{true}}">
+
+            <view class='section'>
+                <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}'>
+                    <block wx:for="{{imgUrls}}" wx:key=''>
+                        <swiper-item>
+                            <image src='{{item.image}}' style='height:365rpx;width:750rpx' mode='aspectFill'></image>
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>  
+
+            <view class='section s3'>
+                <view wx:for="{{logos}}" wx:key='' id="{{index}}" bindtap="goToDetailPage">
+                    <view style='display: flex;flex-direction: column; width: 150rpx; align-items: center;'>
+                        <image src='{{item.image}}' style='height:100rpx;width:100rpx' mode='aspectFill'></image>
+                        <text>{{item.title}}</text>
+                    </view>  
+                </view>
+            </view>
+        </scroll-view>
+
+    </view>
+</view>
+<view> 干货推荐：</view>
+<view>************************************************</view>
+    <view wx:for="{{news}}">
+            <view class="new" bindtap="goToNews" data-id="{{item.id}}">
+            <view>{{item.title}}</view>
+            <view>{{item.sdate}}</view>
+            </view>
+    </view>
+
+<toast hidden="{{toastHidden}}" duration="3000" bindchange="onToastChanged">    
+        {{toastText}}    
+</toast>  
+
+
+
+

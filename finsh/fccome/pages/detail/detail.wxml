@@ -1,0 +1,44 @@
+<view class="content" wx:if="{{isLoading}}">
+    <view class="book-content">
+        <view>
+            <view class="book-list">
+                <view class="book-image">
+                    <image src="{{jobMsg.imageUrl}}" mode="aspectFit"></image>
+                </view>
+                <view class="book-info">
+                    <view class="book-info-style">
+                        <view>公司:{{jobMsg.company}}</view>
+                        <view>职位:{{jobMsg.position}}\n</view>
+                        <view>联系电话:{{jobMsg.tel}}\n</view>
+                        <view>发起时间:{{jobMsg.time}}\n</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="space-line-30"></view>
+    <scroll-view scroll-y="true" class="scroll-content" style="height:{{windowHeight*0.66}}px">
+        <view class="book-intro">
+            <text class="book-title">薪资</text>
+            <text class="book-msg">{{jobMsg.salary}}</text>
+        </view>
+        <view class="space-line-30"></view>
+        <view class="book-intro">
+            <text class="book-title">联系电话</text>
+            <text class="book-msg">{{jobMsg.tel}}</text>
+        </view>
+        <view class="space-line-30"></view>
+        <view class="book-intro">
+            <text class="book-title">面试地点</text>
+            <text class="book-msg">{{jobMsg.location}}</text>
+        </view>
+        <view class="book-intro">
+            <text class="book-title">详情介绍</text>
+            <text class="book-msg">{{jobMsg.detail}}</text>
+        </view>
+        <view class="btn-area">
+            <button type="primary" size="default" wx:if="{{showBookBtn}}">加入计划</button>
+            <button type="primary" size="default" wx:if="{{showAddBook}}" bindtap="addBook">已加入计划</button>
+        </view>
+    </scroll-view>
+</view>

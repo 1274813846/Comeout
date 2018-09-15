@@ -1,0 +1,14 @@
+<view class="page__bd center" >  
+     <label  class='weui-label label' style="position:absolute;top:{{windowHeight * 0.01}}px;right:{{windowWidth*0.01}}px;" bindtap='jump2url'>
+        <text class='text'>跳过</text>
+     </label>
+  <image src="{{imagesrc}}" class="back_img">  
+  </image>
+
+
+<view style="position:absolute;top:{{windowHeight * 0.52}}px;margin:10px;width:{{windowWidth-20}}px;">
+    <view><text class="user-motto margin"> {{hitokoto}}</text></view>
+    <view style='text-align:right;'><text class="user-motto">—— {{source}}</text></view> 
+    </view>
+</view>  
+        
